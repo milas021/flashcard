@@ -1,0 +1,58 @@
+body {
+  background-color: darkcyan;
+}
+
+.error {
+  font-size: 24px;
+  color: red;
+}
+
+.container {
+  background-color: darkorange;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .flashcard-form {
+  display: flex;
+  justify-content: center;
+}
+.container .flashcard-form label {
+  margin: 8px;
+}
+.container .flashcard-list {
+  background-color: darkmagenta;
+  display: flex;
+}
+.container .flashcard-list li {
+  list-style: none;
+  width: 300px;
+  height: 300px;
+  margin: 8px;
+  background-color: lightgreen;
+}
+
+.card {
+  position: relative;
+  background-color: aqua;
+}
+
+.card > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.flip-enter-active {
+  transition: all 0.4s ease;
+}
+
+.flip-enter {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.flip-leave {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
